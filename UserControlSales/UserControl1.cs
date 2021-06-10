@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace UserControlSales
 {
     public partial class UserControl1 : UserControl
@@ -45,8 +46,22 @@ namespace UserControlSales
                 durationTextBox.Text = filmy.length + "'";
                 specialFeaturesTextBox.Text = filmy.specialFeature;
             }
-            
-            
+                        
         }
+
+        public void updateActors(int film_id)
+        {
+            List<Actor> actors = DataAccess.returnActor(film_id);
+
+            foreach (Actor actor in actors)
+            {
+                ActorsInfo.ActorInfo actorInfo = new ActorsInfo.ActorInfo();
+                actorInfo.Actor_Id = actor.actor_id;
+                actorInfo.BorderStyle = BorderStyle.FixedSingle;
+
+                flowLayoutPanel1.Controls.Add(actorInfo);
+            }
+        }
+
     }
 }

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SakilaActorsForm", "Adventu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserControlSakilaActorsDetails", "UserControlSales\UserControlSakilaActorsDetails.csproj", "{388CE02C-DF51-4B26-8A31-73DEB123B1E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserControlActorsInfo", "ActorsInfo\UserControlActorsInfo.csproj", "{97F41B2C-4F5C-4D23-89EC-38AE1C6F9461}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{388CE02C-DF51-4B26-8A31-73DEB123B1E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{388CE02C-DF51-4B26-8A31-73DEB123B1E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{388CE02C-DF51-4B26-8A31-73DEB123B1E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97F41B2C-4F5C-4D23-89EC-38AE1C6F9461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97F41B2C-4F5C-4D23-89EC-38AE1C6F9461}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97F41B2C-4F5C-4D23-89EC-38AE1C6F9461}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97F41B2C-4F5C-4D23-89EC-38AE1C6F9461}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

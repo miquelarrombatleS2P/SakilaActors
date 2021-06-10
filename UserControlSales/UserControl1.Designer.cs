@@ -79,7 +79,7 @@ namespace UserControlSales
             // 
             this.flowLayoutPanel1.Location = new System.Drawing.Point(25, 346);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(576, 173);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(576, 237);
             this.flowLayoutPanel1.TabIndex = 10;
             // 
             // label5
@@ -169,7 +169,7 @@ namespace UserControlSales
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupBox1);
             this.Name = "UserControl1";
-            this.Size = new System.Drawing.Size(654, 572);
+            this.Size = new System.Drawing.Size(654, 631);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
