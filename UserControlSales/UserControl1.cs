@@ -16,5 +16,37 @@ namespace UserControlSales
         {
             InitializeComponent();
         }
+        private int film_Id;
+
+        public int Film_Id
+        {
+            get { return film_Id; }
+            set
+            {
+                if (film_Id == 0)
+                {
+                    film_Id = 1;
+                }
+                film_Id = value;
+                //MessageBox.Show(_ProductModelID.ToString());
+                UpdateFIlm(film_Id);
+            }
+        }
+
+        public void UpdateFIlm(int film_id)
+        {
+            List<Film> films = DataAccess.returnFilmDetail(film_id);
+
+            foreach (Film filmy in films)
+            {
+                titleTextBox.Text = filmy.title;
+                descriptionTextBox.Text = filmy.description;
+                ratingTextBox.Text = filmy.rating;
+                durationTextBox.Text = filmy.length + "'";
+                specialFeaturesTextBox.Text = filmy.specialFeature;
+            }
+            
+            
+        }
     }
 }

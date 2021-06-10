@@ -94,6 +94,7 @@
   <ItemGroup>
     <Compile Include="Category.cs" />
     <Compile Include="DataAccess.cs" />
+    <Compile Include="Film.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +128,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UserControlSales\UserControlSakilaActorsDetails.csproj">
+      <Project>{388CE02C-DF51-4B26-8A31-73DEB123B1E2}</Project>
+      <Name>UserControlSakilaActorsDetails</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

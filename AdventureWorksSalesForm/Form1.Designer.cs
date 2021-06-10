@@ -33,6 +33,7 @@ namespace AdventureWorksSalesForm
             this.label1 = new System.Windows.Forms.Label();
             this.filmComboBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.userControlFilmDetail = new UserControlSales.UserControl1();
             this.SuspendLayout();
             // 
             // categoryComboBox
@@ -56,25 +57,34 @@ namespace AdventureWorksSalesForm
             // filmComboBox
             // 
             this.filmComboBox.FormattingEnabled = true;
-            this.filmComboBox.Location = new System.Drawing.Point(336, 46);
+            this.filmComboBox.Location = new System.Drawing.Point(206, 46);
             this.filmComboBox.Name = "filmComboBox";
             this.filmComboBox.Size = new System.Drawing.Size(452, 24);
             this.filmComboBox.TabIndex = 2;
+            this.filmComboBox.SelectedIndexChanged += new System.EventHandler(this.filmComboBox_SelectedIndexChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(333, 23);
+            this.label2.Location = new System.Drawing.Point(203, 23);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(37, 17);
             this.label2.TabIndex = 3;
             this.label2.Text = "Film:";
             // 
+            // userControlFilmDetail
+            // 
+            this.userControlFilmDetail.Location = new System.Drawing.Point(24, 86);
+            this.userControlFilmDetail.Name = "userControlFilmDetail";
+            this.userControlFilmDetail.Size = new System.Drawing.Size(654, 572);
+            this.userControlFilmDetail.TabIndex = 4;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 670);
+            this.ClientSize = new System.Drawing.Size(679, 670);
+            this.Controls.Add(this.userControlFilmDetail);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.filmComboBox);
             this.Controls.Add(this.label1);
@@ -92,6 +102,7 @@ namespace AdventureWorksSalesForm
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox filmComboBox;
         private System.Windows.Forms.Label label2;
+        private UserControlSales.UserControl1 userControlFilmDetail;
     }
 }
 
